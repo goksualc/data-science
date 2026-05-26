@@ -8,6 +8,8 @@ MNIST source (official):
 This solution downloads the 4 gz files, parses IDX format, trains on the **train** split,
 and evaluates accuracy on the **test** split.
 
+Note: if the official host is unavailable, the script falls back to a common MNIST mirror.
+
 ## Model
 
 - Multiclass Logistic Regression (one-vs-rest handled internally as multinomial)

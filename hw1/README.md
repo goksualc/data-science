@@ -1,6 +1,6 @@
 # CISC 7700X HW#1 — kNN on Iris
 
-This repo trains a **k-Nearest Neighbors (kNN)** model to predict Iris flower species from:
+This homework trains a **k-Nearest Neighbors (kNN)** model to predict Iris flower species from:
 
 - `sepal_length`
 - `sepal_width`

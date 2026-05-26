@@ -1,47 +1,39 @@
-# CISC 7700X HW#1 — kNN on Iris
+# CISC 7700X — Homework Repository
 
-This repo trains a **k-Nearest Neighbors (kNN)** model to predict Iris flower species from:
+This repository contains solutions/scripts for **CISC 7700X** homeworks, organized by folder:
 
-- `sepal_length`
-- `sepal_width`
-- `petal_length`
-- `petal_width`
+- `hw1/` — kNN on Iris
+- `hw2/` — Iris histograms + bootstrap confidence intervals
+- `hw3/` — cost-sensitive evaluation of a linear classifier
+- `hw4/` — revenue/earnings/dividends modeling from SEC XBRL “companyfacts”
+- `hw5/` — Naive Bayes spam classifier (Spambase)
+- `hw6/` — classification model on `hw6.data.csv` (70/30 split)
+- `hw7/` — run the HW6-style model on MNIST (train/test split)
 
-Dataset source used by the script: `https://www.theparticle.com/cs/bc/dsci/iris.csv`
+Each homework folder contains its own `README.md` with:
+- what the homework does
+- how to run it
+- where outputs are written
 
-## Setup
+## Quick start
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+Most homeworks can be run from the repo root with `python3 ...` as shown in each folder README.
 
-## Train + evaluate
-
-```bash
-python knn_iris.py
-```
-
-By default it uses the built-in Iris dataset from scikit-learn (so it runs offline).
-
-Optional parameters:
+Examples:
 
 ```bash
-python knn_iris.py --k 7 --test-size 0.25 --seed 1
+python3 hw5/spambase_nb_train.py
+python3 hw6/hw6_train_eval.py
+python3 hw4/hw4_models.py
 ```
 
-## Use a local CSV (optional)
+## Per-homework entrypoints
 
-If you have a local `iris.csv` with columns:
-`sepal_length,sepal_width,petal_length,petal_width,species`
+- **HW1**: `python3 hw1/knn_iris.py`
+- **HW2**: `python3 hw2/iris_bootstrap_analysis.py`
+- **HW3**: `python3 hw3/hw3_linear_model_eval.py`
+- **HW4**: `python3 hw4/hw4_models.py`
+- **HW5**: `python3 hw5/spambase_nb_train.py`
+- **HW6**: `python3 hw6/hw6_train_eval.py`
+- **HW7**: `python3 hw7/hw7_mnist_logreg.py`
 
-```bash
-python knn_iris.py --csv /path/to/iris.csv
-```
-
-## Predict a single flower
-
-```bash
-python knn_iris.py --predict 5.1 3.5 1.4 0.2
-```
