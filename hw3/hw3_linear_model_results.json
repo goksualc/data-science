@@ -1,0 +1,32 @@
+{
+  "N": 10000,
+  "cost_fn": 1000.0,
+  "cost_fp": 100.0,
+  "default_threshold": 0.0,
+  "default": {
+    "accuracy": 0.8809,
+    "confusion": {
+      "tp": 3550,
+      "tn": 5259,
+      "fp": 484,
+      "fn": 707
+    },
+    "cost_total": 755400.0,
+    "economic_gain_total": -755400.0,
+    "economic_gain_per_instance": -75.54
+  },
+  "best_threshold": -1004.5,
+  "best": {
+    "accuracy": 0.8881,
+    "confusion": {
+      "tp": 4257,
+      "tn": 4624,
+      "fp": 1119,
+      "fn": 0
+    },
+    "cost_total": 111900.0,
+    "economic_gain_total": -111900.0,
+    "economic_gain_per_instance": -11.19
+  },
+  "best_equivalent_bias_shift": 1004.5
+}
